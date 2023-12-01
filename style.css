@@ -1,0 +1,511 @@
+@import url('https://fonts.googleapis.com/css2?family=Inspiration&display=swap');
+@import url('https://fonts.cdnfonts.com/css/inspiration');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: Pranshu ;
+  src: url("./fonts/JejuHallasan-Regular.ttf");
+}
+.background{
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  background-image: url("./assets/background-main.png");
+  background-size: 100% 100%;
+}
+.navbar{
+  position: fixed;
+  top: 0;
+  height: 12%;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 1;
+  cursor: pointer;
+}
+.left{
+  width: 40%;
+  display: flex;
+  justify-content: space-evenly;
+  color: #989898;
+  font-size: 2vw ;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  font-family: Pranshu ;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  font-weight: 400;
+
+}
+.home{
+ color:  #71411B;
+}
+.right{
+  width: 40%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;  
+}
+::-webkit-scrollbar{
+  width: 0;
+
+}
+.right input{
+  color: #989898;
+  width: 60%;
+  height: 40%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #71411B;
+  color: #71411B;
+  font-size: 2vw ;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  font-family: Pranshu ;
+  -webkit-text-stroke-width: 0.3px;
+  -webkit-text-stroke-color: rgb(255, 255, 255);
+  font-weight: 400;
+  letter-spacing: 0.5vw;
+  display: flex;
+
+  }
+  ::placeholder {
+    color: #71411B;
+    align-items: end;
+    opacity: 0.7;
+    font-size: 1.5vw;
+  }
+  input:focus{
+    outline: none;
+    cursor: pointer;
+  }
+  .search-png{
+    width: 12%;
+    text-align: end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .search-png img{
+    width: 40%;
+  }
+  .home-scroll{
+    position: absolute;
+    top: 0;
+  }
+  .sangrill{
+    position: absolute;
+    top: 15%;
+    left: 32%;
+    color: #71411B;
+    text-align: center;
+    text-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+    font-size: 11vmax;
+    font-family: 'Inspiration', sans-serif;
+    padding-top: 6%;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    -webkit-text-fill-color:#71411B;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.5vmax;
+  }
+  .caption-parent{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .caption{
+    width: 70%;
+    color: #989898;
+    text-align: center;
+    font-family: Pranshu ;
+    font-size: 2.7778vmax;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 164.984%; 
+    letter-spacing: 0.3333vw;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    font-weight: 400;
+  }
+  .speciality-page{
+    height: 65vh;
+    width: 100vw;
+    color: white;
+    display: flex;
+    justify-content: center;
+  }
+  .centre-speciality-page{
+    position: absolute;
+    width: 100vw;
+    height: 45%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+  }
+.speciality-image{
+  height: 100%;
+  width: 32%;
+  background-size: 100% 100%;
+  box-shadow: 21px 21px 25px 4px rgba(0, 0, 0, 0.71);
+  border-radius: 4%;
+  cursor: pointer;
+}
+.speciality-right{
+  width: 40%;
+  color: #989898;
+  text-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+  font-family: Pranshu ;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20%;
+}
+.item-name{
+  font-size: 3.5556vmax;
+  text-align: center;
+  color: #71411B;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+.category{
+  font-size: 2vmax;
+  text-align: center;
+}
+.button-parent{
+  height: 15%;
+  display: flex;
+  justify-content: center;
+  
+}
+.button{
+  cursor: pointer;
+  height: 100%;
+  width: 30%;
+  background-color: #989898;
+  color:#989898;
+  font-size: 1.5vmax ;
+  line-height: normal;
+  font-family: Pranshu ;
+  font-weight: 400;
+  background: transparent;
+  backdrop-filter: blur( 20px );
+  -webkit-backdrop-filter: blur( 20px );
+  border-radius: 10px;
+  border: 3px solid #71411B;
+}
+.modal-parent{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
+}
+.modal{
+  height: 80vh;
+  width: 85vw;
+  position: absolute;
+  top: 80%;
+  display: none;
+  background: rgba( 0, 0, 0, 0.8 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  box-shadow: 0px 4px 25px 1px #71411B inset;
+
+}
+.modal-content{
+  color: #989898;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 5%;
+}
+.x{
+  position: absolute;
+  top: 0%;
+  right: 2%;
+  font-size: 4vmax;
+  font-family: 'Nunito', sans-serif;
+  cursor: pointer;
+}
+.parent-ingredients{
+  height: 70%;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10%;
+}
+.text-ingredient{
+  padding-bottom: 4%;
+  text-align: center;
+  font-size: 2vw;
+  letter-spacing: 0.4vw;
+  font-family: Pranshu ;
+  color: #989898;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(255, 255, 255);
+}
+.all-ingredients{
+  height: 67%;
+  width: 80%;
+  overflow: scroll;
+  padding-left: 2%;
+  font-size: 1.8vw;
+  letter-spacing: 0.2vw;
+  display: flex;
+  flex-direction: column;
+  gap: 5%;
+  color: rgb(146, 184, 113);
+  -webkit-text-stroke-width: 0.3px;
+  -webkit-text-stroke-color: rgb(0, 0, 0);
+}
+.ing{
+  display: flex;
+  gap: 15%;
+  align-items: center;
+}
+.ing-img{
+  height: 8vh;
+  width: 5vw;
+  border-radius: 50%;
+  background-size: 100% 100%;
+}
+.parent-instruction{
+  height: 85%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 10%;
+}
+.text-instruction{
+  text-align: center;
+  letter-spacing: 0.4vmax;
+  font-size: 4vw;
+  color: #989898;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #d3c9c9;
+}
+.inst{
+  height: 65%;
+  overflow: scroll;
+  text-align: center;
+  line-height: 4vh;
+  font-size: 1.7vw;
+  color: #71411B;
+  -webkit-text-stroke-width: 0.3px;
+  -webkit-text-stroke-color: rgb(255, 255, 255);
+}
+.tutorial{
+  height: 10%;
+}
+.tutorial button{
+  height: 100%;
+  width: 30%;
+  background-color: #989898;
+  color:#989898;
+  font-size: 1.3vw ;
+  line-height: normal;
+  font-family: Pranshu ;
+  font-weight: 400;
+  background: transparent;
+  backdrop-filter: blur( 20px );
+  -webkit-backdrop-filter: blur( 20px );
+  border-radius: 10px;
+  border: 3px solid #71411B;
+  cursor: pointer;
+}
+.item-display-page{
+  opacity: 0.9999999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.all-items{
+  width: 90vw;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  justify-content: center;
+}
+.items{
+  height: 45vh;
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10%;
+}
+.item-image{
+  height: 60%;
+  width: 75%;
+  background-image: url("https://img.freepik.com/premium-photo/amazing-delicious-cheese-burger_727939-299.jpg");
+  background-size: 100% 100%;
+  box-shadow: 21px 21px 25px 4px rgba(0, 0, 0, 0.71);
+  border-radius: 4%;
+}
+.food-name{
+  color: #989898;
+  text-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+  font-size: 2vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  font-family: Pranshu ;
+  text-align: center;
+  width: 75%;
+}
+.redirect{
+  color: white;
+}
+.scroll{
+  position: absolute;
+}
+.top-bar{
+  height: 12vh;
+  width: 100%;
+  display: none;
+}
+
+@media screen and (max-width: 450px){
+  .background{
+    height: 100vh;
+    width: 100vw;
+    background-image: url("./assets/mobilebg.png");
+    background-size: 100% 100%;
+  }
+  .left{
+    font-size: 5vw;
+    gap: 5%;
+    width: 80%;
+    font-weight: 100;
+    -webkit-text-stroke-width: 0.7px;
+    -webkit-text-stroke-color: black;
+  }
+  .right{
+    width: 40%;
+    padding-right: 4%;
+  }
+  .right input{
+    width: 65%;
+    font-size: 3vw;
+    letter-spacing: 0;
+    height: 20%;
+  }
+  ::placeholder {
+    color: #71411B;
+    align-items: end;
+    opacity: 0.7;
+    padding-left: 22%;
+    font-size: 1vh;
+    letter-spacing: 0.2vw;
+  }
+  .search-png{
+    display: none;
+  }
+  .sangrill{
+    left: 12%;
+    top: 32%;
+  }
+  .caption{
+    width: 100%;
+    font-size: 2.5vh;
+  }
+  .speciality-image{
+    height: 50%;
+    width: 50%;
+  }
+  .speciality-right{
+    height: 50%;
+    width: 80%;
+    gap: 30%;
+  }
+  .centre-speciality-page{
+    flex-direction: column;
+    align-items: center;
+    gap: 20%;
+  }
+  .item-name{
+    width: 100%;
+    font-size: 3vh;
+  }
+  .button{
+    width: 50%;
+    height: 50px;
+  }
+ .modal-content{
+  flex-direction: column;
+  gap: 0;
+ }
+ .parent-ingredients{
+  width: 100%;
+  height: 50%;
+  gap: 8%;
+ }
+ .text-ingredient{
+  padding-bottom: 0%;
+  padding-top: 10%;
+  font-size: 2.5vh;
+ }
+ .all-ingredients{
+  height: 100%;
+  font-size: 1.8vh;
+ }
+ .ing-img{
+  width: 15vw;
+ }
+ .parent-instruction{
+  width: 100%;
+  height: 50%;
+  padding-bottom: 4%;
+ }
+ .text-instruction{
+  font-size: 4vh;
+ }
+ .inst{
+  height: 100%;
+  line-height: 5vw;
+  font-size: 2vh;
+  padding-left: 5%;
+  padding-right: 5%;
+ }
+ .tutorial{
+  height: 18%;
+  display: flex;
+  justify-content: center;
+ }
+ .tutorial button{
+  font-size: 1.3vh ;
+ }
+ .all-items{
+  grid-template-columns: repeat(2,1fr);
+  width: 100%;
+ }
+ .items{
+  justify-self: center;
+  height: 30vh;
+  width: 50vw;
+ }
+ .food-name{
+  font-size: 2vh;
+  width: 85%;
+ }
+}
